@@ -1,0 +1,30 @@
+{
+  "name": "azure-storage-blob",
+  "version": "1.0.0",
+  "description": "Convenience wrapper around @azure/storage-blob",
+  "main": "src/index.js",
+  "author": "",
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "standard && npm audit && ava"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "@azure/storage-blob": "10.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/azure-storage-blob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/azure-storage-blob/issues"
+  },
+  "homepage": "https://github.com/telemark/azure-storage-blob#readme",
+  "devDependencies": {
+    "ava": "1.4.1",
+    "standard": "12.0.1"
+  }
+}
