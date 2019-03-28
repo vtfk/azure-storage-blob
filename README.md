@@ -5,7 +5,7 @@ Convenience wrapper around [@azure/storage-blob](https://www.npmjs.com/package/@
 # Install
 
 ```bash
-npm i --save @telemark/azure-storage-blob
+npm i --save @vtfk/azure-storage-blob
 ```
 
 # API
@@ -23,7 +23,7 @@ Generate a SAS with desired `start` and `end` time.
 Copy and use `Blob service SAS URL` as `connectionString`
 
 ```js
-const storage = require('@telemark/azure-blob-storage')({
+const storage = require('@vtfk/azure-blob-storage')({
   connectionString: '<BLOB_SERVICE_SAS_URL>'
 })
 ```
