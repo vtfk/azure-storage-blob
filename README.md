@@ -25,7 +25,7 @@ Copy and use `Blob service SAS URL` as `connectionString`
 ```js
 const storage = require('@vtfk/azure-blob-storage')({
   connectionString: '<BLOB_SERVICE_SAS_URL>'
-  /* optional timout in ms
+  /* optional timeout in ms
     timeout: 30 * 1000
   */
 })
