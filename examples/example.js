@@ -13,20 +13,20 @@
     // Create container
     log(await storage.createContainer(CONTAINER))
 
-    // Create blob connection
-    const blob = storage.blob(CONTAINER)
+    // Create container connection
+    const container = storage.blob(CONTAINER)
 
     // List blobs in container
-    log(await blob.listBlob())
+    log(await container.listBlob())
 
     // Write text to blob
-    log(await blob.writeTextBlob(FILE, JSON.stringify({ text: 'The world is beautiful' })))
+    log(await container.writeTextBlob(FILE, JSON.stringify({ text: 'The world is beautiful' })))
 
     // Read blob
-    log(await blob.readBlob(FILE))
+    log(await container.readBlob(FILE))
 
     // Delete blob
-    log(await blob.deleteBlob(FILE))
+    log(await container.deleteBlob(FILE))
 
     // Delete container
     log(await storage.deleteContainer(CONTAINER))
