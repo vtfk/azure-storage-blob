@@ -88,7 +88,7 @@ See [examples/example.js](examples/example.js)
 To run `example.js` create file `.env` in project root with following content
 
 ```
-BLOB_SERVICE_SAS_URL=<OB_SERVICE_SAS_URL>
+BLOB_SERVICE_SAS_URL=<BLOB_SERVICE_SAS_URL>
 ```
 
 And run `npm run example`
