@@ -23,7 +23,7 @@ Generate a SAS with desired `start` and `end` time.
 Copy and use `Blob service SAS URL` as `connectionString`
 
 ```js
-const storage = require('@alheimsins/azure-blob-storage')({
+const storage = require('@telemark/azure-blob-storage')({
   connectionString: '<BLOB_SERVICE_SAS_URL>'
 })
 ```
