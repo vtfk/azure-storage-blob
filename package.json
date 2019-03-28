@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Convenience wrapper around @azure/storage-blob",
   "main": "src/index.js",
-  "author": "",
+  "author": "Jonas Enge <jonas.enge@gmail.com> (https://github.com/maccyber)",
   "files": [
     "src/"
   ],
@@ -11,7 +11,12 @@
     "test": "standard && npm audit && ava",
     "example": "node examples/example"
   },
-  "keywords": [],
+  "keywords": [
+    "sdk",
+    "azure",
+    "storage",
+    "blob"
+  ],
   "license": "MIT",
   "dependencies": {
     "@azure/storage-blob": "10.3.0"
