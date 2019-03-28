@@ -1,6 +1,6 @@
 # (WIP) azure-blob-storage
 
-High-level API for [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob)
+High-level API in front of [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob)
 
 # Install
 
