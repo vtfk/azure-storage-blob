@@ -63,7 +63,7 @@ const container = storage.container('containername')
 ### List blobs in container
 
 ```js
-const { segment: { blobItems } = await container.listBlob()
+const { segment: { blobItems } } = await container.listBlob()
 ```
 
 ### Write text to blob
