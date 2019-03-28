@@ -16,7 +16,7 @@ Currently it only supports Shared Access Signature (SAS)
 
 Go to https://portal.azure.com
 
-Storage accounts -> <Your Storage account> -> Shared access signature
+Storage accounts -> Your Storage account -> Shared access signature
 
 Generate a SAS with desired `start` and `end` time.
 
