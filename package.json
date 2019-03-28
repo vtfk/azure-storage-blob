@@ -1,5 +1,5 @@
 {
-  "name": "azure-storage-blob",
+  "name": "@telemark/azure-storage-blob",
   "version": "1.0.0",
   "description": "Convenience wrapper around @azure/storage-blob",
   "main": "src/index.js",
