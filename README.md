@@ -2,6 +2,12 @@
 
 Convenience wrapper around [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob)
 
+# Install
+
+```bash
+npm i --save @telemark/azure-storage-blob
+```
+
 # API
 
 ## Connection
