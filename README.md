@@ -1,6 +1,6 @@
 # (WIP) azure-blob-storage
 
-Convenience wrapper around [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob)
+High-level API for [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob)
 
 # Install
 
