@@ -12,7 +12,7 @@ npm i --save @telemark/azure-storage-blob
 
 ## Connection
 
-Only supports shared access signature (SAS)
+Currently it only supports Shared Access Signature (SAS)
 
 Go to https://portal.azure.com
 
