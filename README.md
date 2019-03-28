@@ -18,7 +18,7 @@ Copy and use `Blob service SAS URL` as `connectionString`
 
 ```js
 const storage = require('@alheimsins/azure-blob-storage')({
-	connectionString: '<BLOB_SERVICE_SAS_URL>'
+  connectionString: '<BLOB_SERVICE_SAS_URL>'
 })
 ```
 
