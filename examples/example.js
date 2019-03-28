@@ -1,10 +1,10 @@
 (async () => {
+  require('dotenv').config()
   const log = data => console.log(JSON.stringify(data, null, 2))
-  const BLOB_SERVICE_SAS_URL = '<BLOB_SERVICE_SAS_URL>'
   const CONTAINER = 'testcontainer'
   const FILE = 'test.json'
   const storage = require('../src/index')({
-    connectionString: BLOB_SERVICE_SAS_URL
+    connectionString: process.env.BLOB_SERVICE_SAS_URL
   })
   try {
     // List containers
