@@ -1,6 +1,8 @@
 # (WIP) azure-blob-storage
 
-High-level API for Azure Blob Storage operations that uses the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob) SDK
+High-level API for Azure Blob Storage operations.
+
+Uses the [@azure/storage-blob](https://www.npmjs.com/package/@azure/storage-blob) SDK
 
 # Install
 
