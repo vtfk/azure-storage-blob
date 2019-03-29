@@ -37,19 +37,19 @@ const storage = require('@vtfk/azure-blob-storage')({
 ### List containers in storage account
 
 ```js
-const { containerItems } = await storage.listContainers()
+const { containerItems } = await storage.list()
 ```
 
 ### Create a container
 
 ```js
-await storage.createContainer('containername')
+await storage.create('containername')
 ```
 
-### Delete a container
+### Remove a container
 
 ```js
-await storage.deleteContainer('containername')
+await storage.remove('containername')
 ```
 
 ## Blob operations
@@ -63,25 +63,25 @@ const container = storage.container('containername')
 ### List blobs in container
 
 ```js
-const { segment: { blobItems } } = await container.listBlob()
+const { segment: { blobItems } } = await container.list()
 ```
 
 ### Write text to blob
 
 ```js
-await container.writeTextBlob('test.json', JSON.stringify({ text: 'One thought fills immensity.' }))
+await container.writeText('test.json', JSON.stringify({ text: 'One thought fills immensity.' }))
 ```
 
 ### Read blob
 
 ```js
-const content = await container.readBlob('test.json')
+const content = await container.readFile('test.json')
 ```
 
-### Delete blob
+### Remove blob
 
 ```js
-await container.deleteBlob('test.json')
+await container.removeFile('test.json')
 ```
 
 # Examples
@@ -95,9 +95,6 @@ BLOB_SERVICE_SAS_URL=<BLOB_SERVICE_SAS_URL>
 ```
 
 And run `npm run example`
-
-
-
 
 # License
 

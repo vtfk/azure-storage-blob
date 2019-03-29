@@ -8,29 +8,30 @@
   })
   try {
     // List containers
-    log(await storage.listContainers())
+    log(await storage.list())
 
     // Create container
-    log(await storage.createContainer(CONTAINER))
+    log(await storage.create(CONTAINER))
 
     // Create container connection
-    const container = storage.blob(CONTAINER)
+    const container = storage.container(CONTAINER)
 
     // List blobs in container
-    log(await container.listBlob())
+    log(await container.list())
 
     // Write text to blob
-    log(await container.writeTextBlob(FILE, JSON.stringify({ text: 'The world is beautiful' })))
+    log(await container.writeText(FILE, JSON.stringify({ text: 'The world is beautiful' })))
 
     // Read blob
-    log(await container.readBlob(FILE))
+    log(await container.readFile(FILE))
 
     // Delete blob
-    log(await container.deleteBlob(FILE))
+    log(await container.removeFile(FILE))
 
     // Delete container
-    log(await storage.deleteContainer(CONTAINER))
+    log(await storage.remove(CONTAINER))
   } catch (error) {
+    console.log('ERROR:')
     log(error)
   }
 })()

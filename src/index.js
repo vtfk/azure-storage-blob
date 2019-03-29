@@ -78,7 +78,7 @@ module.exports = options => {
     return blockBlobURL.upload(aborter, content, content.length)
   }
 
-  function deleteBlob (filename) {
+  function removeBlob (filename) {
     if (!filename) {
       throw Error('Filename missing')
     }
@@ -87,19 +87,19 @@ module.exports = options => {
   }
 
   return {
-    listContainers,
-    createContainer: name => createContainer(name),
-    deleteContainer: name => deleteContainer(name),
+    list: () => listContainers,
+    create: name => createContainer(name),
+    remove: name => deleteContainer(name),
     container: containerName => {
       if (!containerName) {
         throw Error('Missing required input: containerName')
       }
       blobURL = ContainerURL.fromServiceURL(serviceURL, containerName)
       return {
-        listBlob,
-        readBlob: filename => readBlob(filename),
-        deleteBlob: filename => deleteBlob(filename),
-        writeTextBlob: (filename, content) => writeTextBlob(filename, content)
+        list: () => listBlob,
+        readFile: filename => readBlob(filename),
+        removeFile: filename => removeBlob(filename),
+        writeText: (filename, content) => writeTextBlob(filename, content)
       }
     }
   }

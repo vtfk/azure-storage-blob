@@ -1,6 +1,6 @@
 {
   "name": "@vtfk/azure-storage-blob",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convenience wrapper around @azure/storage-blob",
   "main": "src/index.js",
   "author": "Jonas Enge <jonas.enge@gmail.com> (https://github.com/maccyber)",
