@@ -1,7 +1,7 @@
 {
   "name": "@vtfk/azure-storage-blob",
-  "version": "1.0.2",
-  "description": "Convenience wrapper around @azure/storage-blob",
+  "version": "1.0.3",
+  "description": "High-level API for Azure Blob Storage operations",
   "main": "src/index.js",
   "author": "Jonas Enge <jonas.enge@gmail.com> (https://github.com/maccyber)",
   "files": [

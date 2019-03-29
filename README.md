@@ -14,7 +14,7 @@ npm i --save @vtfk/azure-storage-blob
 
 ## Connection
 
-Currently it only supports Shared Access Signature (SAS)
+Currently it only supports Shared Access Signature (SAS). Pull requests welcome!
 
 Go to https://portal.azure.com
 
@@ -56,7 +56,7 @@ await storage.remove('containername')
 
 ## Blob operations
 
-First, connect to a desired container
+First, connect to the desired container
 
 ```js
 const container = storage.container('containername')
