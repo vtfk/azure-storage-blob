@@ -23,10 +23,10 @@
     log(await container.writeText(FILE, JSON.stringify({ text: 'The world is beautiful' })))
 
     // Read blob
-    log(await container.readFile(FILE))
+    log(await container.read(FILE))
 
     // Delete blob
-    log(await container.removeFile(FILE))
+    log(await container.remove(FILE))
 
     // Delete container
     log(await storage.remove(CONTAINER))

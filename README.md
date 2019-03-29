@@ -75,13 +75,13 @@ await container.writeText('test.json', JSON.stringify({ text: 'One thought fills
 ### Read blob
 
 ```js
-const content = await container.readFile('test.json')
+const content = await container.read('test.json')
 ```
 
 ### Remove blob
 
 ```js
-await container.removeFile('test.json')
+await container.remove('test.json')
 ```
 
 # Examples

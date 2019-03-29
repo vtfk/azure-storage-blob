@@ -97,8 +97,8 @@ module.exports = options => {
       blobURL = ContainerURL.fromServiceURL(serviceURL, containerName)
       return {
         list: () => listBlob,
-        readFile: filename => readBlob(filename),
-        removeFile: filename => removeBlob(filename),
+        read: filename => readBlob(filename),
+        remove: filename => removeBlob(filename),
         writeText: (filename, content) => writeTextBlob(filename, content)
       }
     }
