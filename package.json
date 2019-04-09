@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/telemark/azure-storage-blob.git"
+    "url": "git+https://github.com/vtfk/azure-storage-blob.git"
   },
   "bugs": {
-    "url": "https://github.com/telemark/azure-storage-blob/issues"
+    "url": "https://github.com/vtfk/azure-storage-blob/issues"
   },
-  "homepage": "https://github.com/telemark/azure-storage-blob#readme",
+  "homepage": "https://github.com/vtfk/azure-storage-blob#readme",
   "devDependencies": {
     "ava": "1.4.1",
     "dotenv": "7.0.0",
